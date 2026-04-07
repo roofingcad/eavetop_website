@@ -23,12 +23,7 @@ export default function AboutPage() {
       <section className="mt-20 px-6 max-w-4xl text-center flex flex-col items-center">
         <h1 className="text-4xl font-bold mb-6 tracking-tight">About us</h1>
         <p className="text-gray-600 text-sm leading-relaxed max-w-3xl mb-8">
-          At Eavetop, we&apos;re committed to a sustainable future. As a pioneering
-          force in the green energy sector, we&apos;ve been at the forefront of the
-          transition to clean, renewable power sources. Our mission is simple yet
-          profound: to create a world where energy is not only abundant but also
-          environmentally responsible. We believe that by harnessing the power of
-          nature, we can power the world and protect it simultaneously.
+          At Eavetop, we are more than just a service provider we’re your trusted partner in engineering success. With decades of experience and a commitment to excellence, we deliver tailored solutions that help businesses, from startups to global enterprises, achieve their goals.
         </p>
         <button className="border border-black/20 px-10 py-3 rounded-full hover:bg-black hover:text-white transition text-xs font-semibold tracking-wider">
           Read more

@@ -12,24 +12,24 @@ export default function Home() {
 
   const faqs = [
     {
-      question: "What is green energy?",
-      answer: "Green energy is energy that comes from renewable, non-polluting sources such as solar, wind, and water."
+      question: "How accurate and reliable are your estimating and coding services??",
+      answer: "e maintain high accuracy standards by following industry best practices and using advanced tools. Our team ensures precise Medical Coding and reliable estimates for platforms like Symbility and Xactimate."
     },
     {
-      question: "How does green energy benefit the environment?",
-      answer: "It reduces carbon emissions, decreases reliance on fossil fuels, and helps mitigate climate change."
+      question: "How do you maintain data security and confidentiality?",
+      answer: "We prioritize data security by implementing strict confidentiality protocols, secure systems, and controlled access measures. Our processes are designed to protect sensitive client information at every stage."
     },
     {
-      question: "What green energy solutions does your company offer?",
-      answer: "We offer EV charging stations, solar panel installations, wind energy systems, and hydropower solutions."
+      question: "What industries do you primarily serve?",
+      answer: "We serve a diverse range of industries including healthcare, insurance, and mortgage services. Our domain expertise allows us to adapt to industry-specific challenges and provide effective solutions."
     },
     {
-      question: "What support services do you offer after installing green energy solutions?",
-      answer: "We provide 24/7 monitoring, maintenance, and technical support to ensure your systems run efficiently."
+      question: "What makes your services reliable for long-term business partnerships?",
+      answer: "Our commitment to quality, consistency, and timely delivery makes us a trusted partner. We focus on building long-term relationships by delivering measurable results and maintaining transparent communication."
     },
     {
-      question: "How do solar panels work?",
-      answer: "Solar panels convert sunlight into electricity using photovoltaic cells, which create an electric field."
+      question: "Do you offer customized solutions for businesses?",
+      answer: "Yes, absolutely. Every business has unique needs, so we tailor our services to match your specific requirements, goals, and industry standards.."
     }
   ];
 
@@ -42,7 +42,7 @@ export default function Home() {
       {/* Background Image Layer */}
       <div 
         className="absolute inset-0 z-0 opacity-50 bg-cover bg-center mix-blend-overlay pointer-events-none"
-        style={{ backgroundImage: 'url("/transparent.jpg")' }}
+        style={{ backgroundImage: 'url("/home_bg.png")' }}
       ></div>
 
       <Navbar theme="dark" />
@@ -51,14 +51,12 @@ export default function Home() {
       {/* Hero Section */}
        <section className="flex flex-col items-center justify-center text-center mt-16 relative z-10 px-6 pb-32">
         <h1 className="text-8xl font-semibold leading-tight tracking-tight">
-          Energizing a <br />
-          Green Future
+          Empowering <br />
+          Global Businesses
         </h1>
 
         <p className="text-gray-400 max-w-2xl mt-8 text-lg leading-8">
-          Our commitment to green energy is paving the way for a cleaner,
-          healthier planet. Join us on a journey towards a future where clean,
-          renewable energy sources transform the way we power our lives.
+          Transform your business with expert engineering, seamless migrations, and innovative digital solutions, no matter where you are.
         </p>
 
         <button className="mt-12 bg-[#bdf46d] text-[#022c22] px-10 py-4 rounded-full font-semibold hover:bg-[#a9e25d] transition shadow-lg shadow-green-900/20">
@@ -70,10 +68,10 @@ export default function Home() {
       <section className="w-full bg-[#fdf8f1] py-20 relative z-10">
         <div className="max-w-5xl mx-auto grid grid-cols-4 gap-8">
           {[
-            { value: "5,000 MWh", label: "Renewable Energy Generated" },
-            { value: "2,500+", label: "Projects Completed" },
-            { value: "10,000+", label: "Happy Customers" },
-            { value: "15%", label: "Global Market Share" },
+            { value: "95%", label: "Client Satisfaction Rate" },
+            { value: "99%", label: "Uptime Guarantee" },
+            { value: "40%", label: " Faster MVP Delivery" },
+            { value: "300+", label: "Successful Projects Delivered" },
           ].map((stat, i) => (
             <div key={i} className="text-center group">
               <h2 className="text-3xl font-bold text-[#022c22] mb-2 transition">{stat.value}</h2>
@@ -84,52 +82,75 @@ export default function Home() {
       </section>
 
       {/* Solutions Section (Lime Green) */}
-      <section className="w-full mt-20 px-6 py-24 bg-[#bdf46d] text-[#022c22] relative z-10 rounded-[3rem] mx-6">
-        <div className="max-w-7xl mx-auto">
-          <div className="flex items-center gap-2 mb-4">
-            <div className="w-2 h-2 rounded-full bg-current opacity-60"></div>
-            <span className="text-xs font-bold tracking-widest uppercase opacity-70">Solutions</span>
-          </div>
-          <h2 className="text-5xl font-semibold mb-20 tracking-tight">Key to clean future</h2>
+<section className="w-full mt-20 px-6 py-24 bg-[#bdf46d] text-[#022c22] relative z-10 rounded-[3rem] mx-6">
+  <div className="max-w-7xl mx-auto">
+    <div className="flex items-center gap-2 mb-4">
+      <div className="w-2 h-2 rounded-full bg-current opacity-60"></div>
+      <span className="text-xs font-bold tracking-widest uppercase opacity-70">
+       Our Expertise
+      </span>
+    </div>
 
-          <div className="grid grid-cols-2 gap-x-20 gap-y-16">
-            {[
-              {
-                title: "EV Charging",
-                desc: "Electric vehicles are a cleaner option, which can be powered from renewable energy sources. Our solutions help reducing greenhouse gas emissions in the transportation sector.",
-                icon: "⚡"
-              },
-              {
-                title: "Solar Energy",
-                desc: "Solar panels convert sunlight into electricity. Photovoltaic (PV) cells on the panels capture the energy from the sun and convert it into electrical power.",
-                icon: "☀️"
-              },
-              {
-                title: "Wind Energy",
-                desc: "Wind turbines harness the kinetic energy of the wind to generate electricity. Wind farms with multiple turbines are commonly used to produce large amounts of clean energy.",
-                icon: "🎐"
-              },
-              {
-                title: "Hydropower",
-                desc: "The technology uses the energy from flowing water, such as rivers and dams, to turn turbines and generate electricity. It is one of the oldest forms of renewable energy.",
-                icon: "💧"
-              }
-            ].map((card, i) => (
-              <div key={i} className="flex flex-col gap-4">
-                <div className="text-4xl mb-2">{card.icon}</div>
-                <h3 className="text-xl font-bold">{card.title}</h3>
-                <p className="text-[#022c22]/70 text-sm leading-relaxed max-w-sm">{card.desc}</p>
-                <Link href="#" className="font-bold text-sm mt-2 border-b-2 border-current w-fit">Read more</Link>
-              </div>
-            ))}
+    <h2 className="text-5xl font-semibold mb-20 tracking-tight">
+      Key to clean future
+    </h2>
+
+    <div className="grid grid-cols-2 gap-x-20 gap-y-16">
+      {[
+        {
+          title: "IT Services",
+          desc: "We provide end-to-end IT solutions including system setup, maintenance, cloud integration, and technical support. Our goal is to ensure your business runs smoothly with secure, scalable, and efficient technology infrastructure.",
+          icon: "⚡"
+        },
+        {
+          title: "Medical Coding",
+          desc: "Our medical coding services ensure accurate conversion of healthcare diagnoses, procedures, and services into standardized codes. We help healthcare providers maintain compliance, reduce errors, and streamline billing processes.",
+          icon: "☀️"
+        },
+        {
+          title: "Symbility Measurements",
+          desc: "We deliver precise property measurements using Symbility tools to support insurance claims and assessments. Our team ensures accurate data collection to help speed up claim processing and improve estimation reliability.",
+          icon: "🎐"
+        },
+        {
+          title: "Xactimate Estimating Services",
+          desc: "We provide detailed and accurate cost estimates using Xactimate for property damage and insurance claims. Our expertise helps insurers and contractors make informed decisions with reliable and timely reports.",
+          icon: "💧"
+        },
+
+        // ✅ NEW SERVICE 1
+        {
+          title: "Mortgage Title Search",
+          desc: "We conduct thorough title searches to verify property ownership, identify liens, and uncover any legal issues associated with a property. Our accurate and detailed reports help ensure smooth and secure real estate transactions.",
+          icon: "📈"
+        },
+
+        // ✅ NEW SERVICE 2
+        {
+          title: "Mortgage Underwriting",
+          desc: "Our mortgage underwriting services involve evaluating borrower eligibility, financial documents, and risk factors to ensure compliance with lending standards. We help lenders make confident, accurate, and timely loan decisions..",
+          icon: "💻"
+        }
+      ].map((item, index) => (
+        <div key={index} className="flex gap-4">
+          <div className="text-2xl">{item.icon}</div>
+          <div>
+            <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
+            <p className="text-sm opacity-80 leading-relaxed">
+              {item.desc}
+            </p>
           </div>
         </div>
-      </section>
+      ))}
+    </div>
+  </div>
+</section>
+
 
       {/* Commitment Statement Section */}
       <section className="mt-40 text-center px-6 relative z-10 max-w-4xl">
         <h2 className="text-5xl font-semibold leading-tight tracking-tight">
-          Our commitment to green energy is paving the way for a cleaner, healthier planet.
+          We deliver precision-driven services that build trust and accelerate business performance.
         </h2>
         <button className="mt-12 bg-[#022c22] text-white px-10 py-4 rounded-full font-semibold hover:bg-black transition border border-white/10">
           Get Started

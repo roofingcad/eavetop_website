@@ -48,25 +48,25 @@ export default function Home() {
         <Navbar theme="dark" />
 
         {/* Hero Section */}
-         <section className="flex flex-col items-center justify-center text-center mt-16 relative z-10 px-6 pb-32">
-          <h1 className="text-8xl font-semibold leading-tight tracking-tight">
-            Empowering <br />
+         <section className="flex flex-col items-center justify-center text-center mt-12 md:mt-16 relative z-10 px-6 pb-20 md:pb-32">
+          <h1 className="text-5xl md:text-8xl font-semibold leading-tight tracking-tight">
+            Empowering <br className="hidden md:block" />
             Global Businesses
           </h1>
 
-          <p className="text-gray-400 max-w-2xl mt-8 text-lg leading-8">
+          <p className="text-gray-400 max-w-2xl mt-6 md:mt-8 text-base md:text-lg leading-7 md:leading-8">
             Transform your business with expert engineering, seamless migrations, and innovative digital solutions, no matter where you are.
           </p>
 
-          <Link href="/services" className="mt-12 bg-[#bdf46d] text-[#022c22] px-10 py-4 rounded-full font-semibold hover:bg-[#a9e25d] transition shadow-lg shadow-green-900/20 inline-block">
+          <Link href="/services" className="mt-10 md:mt-12 bg-[#bdf46d] text-[#022c22] px-8 md:px-10 py-3.5 md:py-4 rounded-full font-semibold hover:bg-[#a9e25d] transition shadow-lg shadow-green-900/20 inline-block">
             See our solutions
           </Link>
         </section>
       </header>
 
       {/* Stats Section */}
-      <section className="w-full bg-[#fdf8f1] py-20 relative z-10">
-        <div className="max-w-5xl mx-auto grid grid-cols-4 gap-8">
+      <section className="w-full bg-[#fdf8f1] py-16 md:py-20 relative z-10">
+        <div className="max-w-5xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-y-12 gap-x-8 px-6">
           {[
             { value: "95%", label: "Client Satisfaction Rate" },
             { value: "99%", label: "Uptime Guarantee" },
@@ -74,15 +74,15 @@ export default function Home() {
             { value: "300+", label: "Successful Projects Delivered" },
           ].map((stat, i) => (
             <div key={i} className="text-center group">
-              <h2 className="text-3xl font-bold text-[#022c22] mb-2 transition">{stat.value}</h2>
-              <p className="text-gray-600 text-[10px] tracking-widest uppercase font-bold">{stat.label}</p>
+              <h2 className="text-2xl md:text-3xl font-bold text-[#022c22] mb-1 md:mb-2 transition">{stat.value}</h2>
+              <p className="text-gray-600 text-[9px] md:text-[10px] tracking-widest uppercase font-bold">{stat.label}</p>
             </div>
           ))}
         </div>
       </section>
 
       {/* Solutions Section (Lime Green) */}
-<section className="w-full mt-20 px-6 py-24 bg-[#bdf46d] text-[#022c22] relative z-10 rounded-[3rem] mx-6">
+<section className="w-full mt-12 md:mt-20 px-4 md:px-6 py-16 md:py-24 bg-[#bdf46d] text-[#022c22] relative z-10 rounded-[2rem] md:rounded-[3rem] mx-4 md:mx-6 max-w-[calc(100%-2rem)] md:max-w-[calc(100%-3rem)] self-center">
   <div className="max-w-7xl mx-auto">
     <div className="flex items-center gap-2 mb-4">
       <div className="w-2 h-2 rounded-full bg-current opacity-60"></div>
@@ -91,11 +91,11 @@ export default function Home() {
       </span>
     </div>
 
-    <h2 className="text-5xl font-semibold mb-20 tracking-tight">
+    <h2 className="text-3xl md:text-5xl font-semibold mb-12 md:mb-20 tracking-tight">
       Key to clean future
     </h2>
 
-    <div className="grid grid-cols-2 gap-x-20 gap-y-16">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-x-20 gap-y-12 md:gap-y-16">
       {[
         {
           title: "IT Services",
@@ -117,15 +117,11 @@ export default function Home() {
           desc: "We provide detailed and accurate cost estimates using Xactimate for property damage and insurance claims. Our expertise helps insurers and contractors make informed decisions with reliable and timely reports.",
           icon: "💧"
         },
-
-        // ✅ NEW SERVICE 1
         {
           title: "Mortgage Title Search",
           desc: "We conduct thorough title searches to verify property ownership, identify liens, and uncover any legal issues associated with a property. Our accurate and detailed reports help ensure smooth and secure real estate transactions.",
           icon: "📈"
         },
-
-        // ✅ NEW SERVICE 2
         {
           title: "Mortgage Underwriting",
           desc: "Our mortgage underwriting services involve evaluating borrower eligibility, financial documents, and risk factors to ensure compliance with lending standards. We help lenders make confident, accurate, and timely loan decisions..",
@@ -133,9 +129,9 @@ export default function Home() {
         }
       ].map((item, index) => (
         <div key={index} className="flex gap-4">
-          <div className="text-2xl">{item.icon}</div>
+          <div className="text-2xl pt-1">{item.icon}</div>
           <div>
-            <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
+            <h3 className="text-lg md:text-xl font-semibold mb-2">{item.title}</h3>
             <p className="text-sm opacity-80 leading-relaxed">
               {item.desc}
             </p>
@@ -148,20 +144,20 @@ export default function Home() {
 
 
       {/* Commitment Statement Section */}
-      <section className="mt-40 text-center px-6 relative z-10 max-w-4xl">
-        <h2 className="text-5xl font-semibold leading-tight tracking-tight text-[#022c22]">
+      <section className="mt-24 md:mt-40 text-center px-6 relative z-10 max-w-4xl">
+        <h2 className="text-3xl md:text-5xl font-semibold leading-tight tracking-tight text-[#022c22]">
           We deliver precision-driven services that build trust and accelerate business performance.
         </h2>
-        <button className="mt-12 bg-[#022c22] text-white px-10 py-4 rounded-full font-semibold hover:bg-black transition shadow-lg shadow-green-900/10">
+        <button className="mt-8 md:mt-12 bg-[#022c22] text-white px-8 md:px-10 py-3.5 md:py-4 rounded-full font-semibold hover:bg-black transition shadow-lg shadow-green-900/10">
           Get Started
         </button>
       </section>
 
       {/* Gallery Section */}
-      <section className="mt-32 w-full px-10 relative z-10 max-w-7xl">
-        <div className="flex gap-4 overflow-hidden">
+      <section className="mt-24 md:mt-32 w-full px-4 md:px-10 relative z-10 max-w-7xl">
+        <div className="flex md:grid md:grid-cols-6 gap-4 overflow-x-auto md:overflow-visible pb-8 md:pb-0 scrollbar-hide snap-x snap-mandatory">
           {[1, 2, 3, 4, 5, 6].map((i) => (
-            <div key={i} className="flex-1 aspect-[3/4] bg-gray-100 rounded-3xl overflow-hidden relative group">
+            <div key={i} className="min-w-[70vw] md:min-w-0 md:flex-1 aspect-[3/4] bg-gray-100 rounded-2xl md:rounded-3xl overflow-hidden relative group snap-center">
               <div className="absolute inset-0 bg-gradient-to-t from-[#022c22]/10 to-transparent opacity-100 group-hover:opacity-100 transition duration-500"></div>
               <Image 
                 src={`/home_0${i}.jpg`} 
@@ -175,18 +171,18 @@ export default function Home() {
       </section>
 
       {/* FAQ Section */}
-      <section className="mt-40 w-full max-w-3xl px-6 relative z-10 pb-40">
-        <h2 className="text-4xl font-semibold text-center mb-4 tracking-tight text-[#022c22]">FAQ</h2>
-        <p className="text-gray-500 text-center text-sm mb-16">Here you will find the answers for the frequently asked questions.</p>
+      <section className="mt-24 md:mt-40 w-full max-w-3xl px-6 relative z-10 pb-32 md:pb-40">
+        <h2 className="text-3xl md:text-4xl font-semibold text-center mb-4 tracking-tight text-[#022c22]">FAQ</h2>
+        <p className="text-gray-500 text-center text-sm mb-12 md:mb-16">Here you will find the answers for the frequently asked questions.</p>
         <div className="flex flex-col gap-4">
           {faqs.map((faq, i) => (
-            <div key={i} className="border border-gray-100 rounded-2xl overflow-hidden bg-gray-50 hover:bg-gray-100 transition cursor-pointer" onClick={() => setOpenFaq(openFaq === i ? null : i)}>
-              <div className="flex justify-between items-center px-8 py-6">
-                <span className="font-semibold text-gray-800">{faq.question}</span>
-                <span className={`text-2xl transition-transform duration-300 ${openFaq === i ? 'rotate-45' : ''}`}>+</span>
+            <div key={i} className="border border-gray-100 rounded-xl md:rounded-2xl overflow-hidden bg-gray-50 hover:bg-gray-100 transition cursor-pointer" onClick={() => setOpenFaq(openFaq === i ? null : i)}>
+              <div className="flex justify-between items-center px-6 md:px-8 py-5 md:py-6">
+                <span className="font-semibold text-gray-800 text-sm md:text-base pr-4">{faq.question}</span>
+                <span className={`text-xl md:text-2xl transition-transform duration-300 flex-shrink-0 ${openFaq === i ? 'rotate-45' : ''}`}>+</span>
               </div>
               {openFaq === i && (
-                <div className="px-8 pb-6 text-gray-600 text-sm leading-relaxed border-t border-gray-200 pt-4">
+                <div className="px-6 md:px-8 pb-5 md:pb-6 text-gray-600 text-xs md:text-sm leading-relaxed border-t border-gray-200 pt-4">
                   {faq.answer}
                 </div>
               )}
@@ -194,14 +190,6 @@ export default function Home() {
           ))}
         </div>
 
-        {/* Support Banner */}
-        <div className="mt-20 bg-[#bdf46d]/20 border border-[#bdf46d]/30 p-8 rounded-[2rem] flex items-center gap-6">
-          <div className="w-12 h-12 rounded-full bg-[#bdf46d] flex items-center justify-center text-[#022c22] text-xl">💬</div>
-          <div>
-            <h4 className="font-bold text-[#022c22]">Still have questions?</h4>
-            <p className="text-gray-600 text-sm mt-1">For assistance, please visit our <Link href="#" className="underline text-[#022c22]">Contact us</Link> page or call our support line at 805-322-6112.</p>
-          </div>
-        </div>
       </section>
 
       <Footer />

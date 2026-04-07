@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="w-full bg-[#fdf8f1] pt-20 pb-10 px-10 relative z-10 mt-auto overflow-hidden">
+    <footer className="w-full bg-[#fdf8f1] pt-16 md:pt-20 pb-10 px-6 md:px-10 relative z-10 mt-auto overflow-hidden">
       {/* Background Wavy Lines Image */}
       <div 
         className="absolute inset-0 z-0 opacity-40 bg-no-repeat bg-[left_bottom] pointer-events-none mix-blend-multiply"
@@ -11,7 +11,7 @@ export default function Footer() {
       ></div>
 
       <div className="max-w-7xl mx-auto relative z-10">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 mb-20">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 mb-16 md:mb-20">
           {/* Logo Section */}
           <div className="lg:col-span-1">
             <Link href="/">
@@ -20,25 +20,25 @@ export default function Footer() {
           </div>
 
           {/* Links Columns */}
-          <div className="grid grid-cols-3 lg:col-span-2 gap-8">
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:col-span-2 gap-8 md:gap-12">
             <div>
-              <h4 className="font-bold text-[#022c22] mb-6">Models</h4>
-              <ul className="space-y-4 text-gray-600 text-sm">
+              <h4 className="font-bold text-[#022c22] mb-4 md:mb-6">Models</h4>
+              <ul className="space-y-3 md:space-y-4 text-gray-600 text-sm">
                 <li><Link href="#" className="hover:text-[#022c22] transition">Solutions</Link></li>
                 <li><Link href="#" className="hover:text-[#022c22] transition">How it works</Link></li>
               </ul>
             </div>
             <div>
-              <h4 className="font-bold text-[#022c22] mb-6">Resources</h4>
-              <ul className="space-y-4 text-gray-600 text-sm">
+              <h4 className="font-bold text-[#022c22] mb-4 md:mb-6">Resources</h4>
+              <ul className="space-y-3 md:space-y-4 text-gray-600 text-sm">
                 <li><Link href="/services" className="hover:text-[#022c22] transition">Services</Link></li>
                 <li><Link href="#" className="hover:text-[#022c22] transition">Help Center</Link></li>
                 <li><Link href="#" className="hover:text-[#022c22] transition">Support</Link></li>
               </ul>
             </div>
-            <div>
-              <h4 className="font-bold text-[#022c22] mb-6">Company</h4>
-              <ul className="space-y-4 text-gray-600 text-sm">
+            <div className="col-span-2 sm:col-span-1">
+              <h4 className="font-bold text-[#022c22] mb-4 md:mb-6">Company</h4>
+              <ul className="space-y-3 md:space-y-4 text-gray-600 text-sm grid grid-cols-2 sm:grid-cols-1 gap-x-4 gap-y-3 md:gap-0">
                 <li><Link href="/about" className="hover:text-[#022c22] transition">About</Link></li>
                 <li><Link href="#" className="hover:text-[#022c22] transition">Our Mission</Link></li>
                 <li><Link href="/careers" className="hover:text-[#022c22] transition">Careers</Link></li>
@@ -48,17 +48,17 @@ export default function Footer() {
           </div>
 
           {/* Newsletter Section */}
-          <div className="lg:col-span-2 bg-[#064e3b] p-8 rounded-3xl border border-white/5">
-            <h4 className="text-xl font-bold text-white mb-4">Stay ahead with our latest insights, industry updates, and innovative solutions designed to help businesses scale, optimize operations, and achieve long-term success.</h4>
+          <div className="lg:col-span-2 bg-[#064e3b] p-6 md:p-8 rounded-2xl md:rounded-3xl border border-white/5">
+            <h4 className="text-lg md:text-xl font-bold text-white mb-6 leading-snug">Stay ahead with our latest insights, industry updates, and innovative solutions designed to help businesses scale and succeed.</h4>
           
-            <div className="flex flex-col gap-3">
+            <div className="flex flex-col sm:flex-row gap-3">
               <input 
                 type="email" 
                 placeholder="Your e-mail..." 
-                className="bg-white/5 border border-white/10 rounded-full px-6 py-3 text-sm focus:outline-none focus:border-green-400 text-white"
+                className="flex-1 bg-white/5 border border-white/10 rounded-full px-6 py-3 text-sm focus:outline-none focus:border-green-400 text-white"
               />
-              <button className="bg-[#bdf46d] text-[#022c22] px-6 py-3 rounded-full font-bold hover:bg-[#a9e25d] transition">
-                Get in touch
+              <button className="bg-[#bdf46d] text-[#022c22] px-6 py-3 rounded-full font-bold hover:bg-[#a9e25d] transition whitespace-nowrap">
+                Subscribe
               </button>
             </div>
           </div>
@@ -77,8 +77,8 @@ export default function Footer() {
               <svg className="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
             </Link>
           </div>
-          <p className="text-gray-600 text-xs">
-            © 2024 Eavetop. All rights reserved by <Link href="#" className="font-semibold hover:text-black transition">Eavetop.net</Link>
+          <p className="text-gray-600 text-[10px] md:text-xs text-center md:text-left">
+            © 2026 Eavetop. All rights reserved by <Link href="#" className="font-semibold hover:text-black transition">Eavetop.com</Link>
           </p>
         </div>
       </div>

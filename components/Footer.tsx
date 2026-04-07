@@ -15,7 +15,7 @@ export default function Footer() {
           {/* Logo Section */}
           <div className="lg:col-span-1">
             <Link href="/">
-              <Image src="/eavetop_logo.jpg" alt="Eavetop Logo" width={100} height={40} className="h-10 w-auto object-contain" />
+              <Image src="/logo_bg_remove.png" alt="Eavetop Logo" width={100} height={40} className="h-10 w-auto object-contain" />
             </Link>
           </div>
 

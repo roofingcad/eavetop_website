@@ -22,12 +22,12 @@ export default function Navbar({ theme = "dark" }: NavbarProps) {
   }, [isMenuOpen]);
 
   return (
-    <nav className={`w-full relative z-50`}>
-      <div className={`flex justify-between items-center px-6 md:px-10 py-6 max-w-7xl mx-auto ${isDark ? "text-white" : "text-gray-900"}`}>
+    <nav className={`w-full relative z-50 bg-[#fdf8f1]`}>
+      <div className={`flex justify-between items-center px-6 md:px-10 py-3 md:py-4 max-w-7xl mx-auto ${isDark ? "text-white" : "text-gray-900"}`}>
         <div className="flex items-center gap-3">
           <Link href="/" className="relative z-50">
             <Image 
-              src="/eavetop_logo.jpg" 
+              src="/logo_bg_remove.png" 
               alt="Eavetop Logo" 
               width={120} 
               height={48} 

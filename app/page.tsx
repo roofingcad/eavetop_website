@@ -36,6 +36,8 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-white text-black relative overflow-hidden flex flex-col items-center">
 
+      <Navbar theme="light" />
+
       {/* Header Section with Background Layer */}
       <header className="relative w-full overflow-hidden flex flex-col items-center bg-[#022c22] text-white">
         
@@ -44,8 +46,6 @@ export default function Home() {
           className="absolute inset-0 z-0 bg-cover bg-center pointer-events-none opacity-100"
           style={{ backgroundImage: 'url("/home_bg.png")' }}
         ></div>
-
-        <Navbar theme="dark" />
 
         {/* Hero Section */}
          <section className="flex flex-col items-center justify-center text-center mt-12 md:mt-16 relative z-10 px-6 pb-20 md:pb-32">
@@ -126,6 +126,16 @@ export default function Home() {
           title: "Mortgage Underwriting",
           desc: "Our mortgage underwriting services involve evaluating borrower eligibility, financial documents, and risk factors to ensure compliance with lending standards. We help lenders make confident, accurate, and timely loan decisions..",
           icon: "💻"
+        },
+         {
+          title: "Medical Billing",
+          desc: "Our medical billing services ensure accurate and timely processing of healthcare claims, from patient registration to final reimbursement. We help providers reduce claim denials, improve cash flow, and streamline revenue cycle management through efficient and compliant billing practices.",
+          icon: "🧾"
+        },
+         {
+          title: "Healthcare BPO",
+          desc: "Our healthcare BPO services support providers with efficient back-office operations, including data management, claims processing, and administrative support. We help organizations reduce operational costs, improve productivity, and focus more on delivering quality patient care.",
+          icon: "🏥"
         }
       ].map((item, index) => (
         <div key={index} className="flex gap-4">

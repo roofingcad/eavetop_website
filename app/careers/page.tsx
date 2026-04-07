@@ -7,13 +7,13 @@ import Link from "next/link";
 export default function CareersPage() {
   const jobs = {
     "Research and Development (R&D)": [
-      { title: "Renewable Energy Researcher", location: "San Francisco, US", type: "Full-Time" },
-      { title: "Materials Scientist", location: "San Francisco, US", type: "Full-Time" },
+      { title: "DevOps Engineer ", location: "Bangalore,Karnataka, India", type: "Full-Time" },
+      { title: "Materials Scientist", location: "Bangalore,Karnataka, India", type: "Full-Time" },
     ],
     "Engineering": [
-      { title: "Renewable Energy Engineer", location: "San Francisco, US", type: "Full-Time" },
-      { title: "Solar Engineer", location: "San Francisco, US", type: "Full-Time" },
-      { title: "Wind Energy Engineer", location: "San Francisco, US", type: "Full-Time" },
+      { title: "Medical Coding Auditor", location: "Bangalore,Karnataka, India", type: "Full-Time" },
+      { title: "Coding Quality Analyst", location: "Bangalore,Karnataka, India", type: "Full-Time" },
+      { title: "Cloud Engineer", location: "Bangalore,Karnataka, India", type: "Full-Time" },
     ]
   };
 
@@ -25,7 +25,7 @@ export default function CareersPage() {
       <section className="mt-20 px-10 max-w-7xl w-full grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
         <div>
           <h1 className="text-6xl font-bold mb-6 tracking-tight">Join our team</h1>
-          <p className="text-gray-500 text-lg">Our philosophy is simple — make the world a greener place.</p>
+          <p className="text-gray-500 text-lg">Our philosophy is simple — deliver solutions that drive real business impact..</p>
         </div>
 
         {/* Team Grid Placeholder */}
@@ -85,8 +85,8 @@ export default function CareersPage() {
       <section className="w-full px-6 mb-40">
         <div className="max-w-7xl mx-auto bg-[#022c22] rounded-[2rem] p-16 flex flex-col md:flex-row justify-between items-center gap-10 overflow-hidden relative">
           <div className="relative z-10">
-            <h2 className="text-4xl font-bold text-white mb-4">Join our Green Energy Movement</h2>
-            <p className="text-gray-400 text-sm max-w-md">Be part of the solution and help us build a sustainable future with innovative green technology.</p>
+            <h2 className="text-4xl font-bold text-white mb-4">Join Our Innovation-Driven Team</h2>
+            <p className="text-gray-400 text-sm max-w-md">Join us in shaping the future of businesses through technology, precision, and impactful solutions..</p>
           </div>
           <button className="relative z-10 bg-[#bdf46d] text-[#022c22] px-10 py-4 rounded-full font-bold hover:bg-[#a9e25d] transition shadow-lg shadow-black/20">
             Get Started

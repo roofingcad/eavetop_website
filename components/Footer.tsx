@@ -49,10 +49,8 @@ export default function Footer() {
 
           {/* Newsletter Section */}
           <div className="lg:col-span-2 bg-[#064e3b] p-8 rounded-3xl border border-white/5">
-            <h4 className="text-xl font-bold text-white mb-4">Your Source for Green Energy Updates</h4>
-            <p className="text-gray-400 text-sm mb-6 leading-relaxed">
-              Stay in the loop with our Green Future newsletter, where we share our latest insights into the clean green energy solutions.
-            </p>
+            <h4 className="text-xl font-bold text-white mb-4">Stay ahead with our latest insights, industry updates, and innovative solutions designed to help businesses scale, optimize operations, and achieve long-term success.</h4>
+          
             <div className="flex flex-col gap-3">
               <input 
                 type="email" 

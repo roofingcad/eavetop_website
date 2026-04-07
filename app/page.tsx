@@ -198,14 +198,7 @@ export default function Home() {
           ))}
         </div>
 
-        {/* Support Banner */}
-        <div className="mt-20 bg-[#bdf46d]/10 border border-[#bdf46d]/20 p-8 rounded-[2rem] flex items-center gap-6">
-          <div className="w-12 h-12 rounded-full bg-[#bdf46d] flex items-center justify-center text-[#022c22] text-xl">💬</div>
-          <div>
-            <h4 className="font-bold text-gray-200">Still have questions?</h4>
-            <p className="text-gray-500 text-sm mt-1">For assistance, please visit our <Link href="#" className="underline text-gray-300">Contact us</Link> page or call our support line at 805-322-6112.</p>
-          </div>
-        </div>
+       
       </section>
 
       <Footer />

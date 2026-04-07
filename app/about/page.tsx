@@ -23,7 +23,13 @@ export default function AboutPage() {
       <section className="mt-20 px-6 max-w-4xl text-center flex flex-col items-center">
         <h1 className="text-4xl font-bold mb-6 tracking-tight">About us</h1>
         <p className="text-gray-600 text-sm leading-relaxed max-w-3xl mb-8">
-          At Eavetop, we are more than just a service provider we’re your trusted partner in engineering success. With decades of experience and a commitment to excellence, we deliver tailored solutions that help businesses, from startups to global enterprises, achieve their goals.
+          At Eavetop, we are more than just a service provider we are your strategic partner in building sustainable growth and operational excellence. With years of industry experience and a deep understanding of evolving business landscapes, we deliver intelligent, results-driven solutions tailored to meet the unique needs of every client.
+
+Our expertise spans across IT services, medical coding, insurance estimation, and mortgage solutions, enabling us to support businesses across multiple sectors with precision and efficiency. We combine technical excellence with a client-first approach, ensuring that every solution we deliver is not only scalable and secure, but also aligned with your long-term business objectives.
+
+From startups looking to establish a strong foundation to established enterprises aiming to optimize performance, Eavetop empowers organizations at every stage of their journey. Our team is committed to maintaining the highest standards of accuracy, compliance, and innovation helping you streamline operations, reduce risks, and unlock new opportunities for growth.
+
+At the core of everything we do is a simple belief: success is built on trust, consistency, and meaningful partnerships. That’s why we focus on delivering measurable value, maintaining transparency, and building relationships that last..
         </p>
         <button className="border border-black/20 px-10 py-3 rounded-full hover:bg-black hover:text-white transition text-xs font-semibold tracking-wider">
           Read more

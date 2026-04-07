@@ -34,35 +34,35 @@ export default function Home() {
   ];
 
   return (
-    <main className="min-h-screen bg-[#022c22] text-white relative overflow-hidden flex flex-col items-center">
+    <main className="min-h-screen bg-white text-black relative overflow-hidden flex flex-col items-center">
 
-      {/* Background gradient effect */}
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_30%,rgba(34,197,94,0.15),transparent_40%)]"></div>
+      {/* Header Section with Background Layer */}
+      <header className="relative w-full overflow-hidden flex flex-col items-center bg-[#022c22] text-white">
+        
+        {/* Background Image Layer */}
+        <div 
+          className="absolute inset-0 z-0 bg-cover bg-center pointer-events-none opacity-100"
+          style={{ backgroundImage: 'url("/home_bg.png")' }}
+        ></div>
 
-      {/* Background Image Layer */}
-      <div 
-        className="absolute inset-0 z-0 opacity-50 bg-cover bg-center mix-blend-overlay pointer-events-none"
-        style={{ backgroundImage: 'url("/home_bg.png")' }}
-      ></div>
+        <Navbar theme="dark" />
 
-      <Navbar theme="dark" />
+        {/* Hero Section */}
+         <section className="flex flex-col items-center justify-center text-center mt-16 relative z-10 px-6 pb-32">
+          <h1 className="text-8xl font-semibold leading-tight tracking-tight">
+            Empowering <br />
+            Global Businesses
+          </h1>
 
+          <p className="text-gray-400 max-w-2xl mt-8 text-lg leading-8">
+            Transform your business with expert engineering, seamless migrations, and innovative digital solutions, no matter where you are.
+          </p>
 
-      {/* Hero Section */}
-       <section className="flex flex-col items-center justify-center text-center mt-16 relative z-10 px-6 pb-32">
-        <h1 className="text-8xl font-semibold leading-tight tracking-tight">
-          Empowering <br />
-          Global Businesses
-        </h1>
-
-        <p className="text-gray-400 max-w-2xl mt-8 text-lg leading-8">
-          Transform your business with expert engineering, seamless migrations, and innovative digital solutions, no matter where you are.
-        </p>
-
-        <button className="mt-12 bg-[#bdf46d] text-[#022c22] px-10 py-4 rounded-full font-semibold hover:bg-[#a9e25d] transition shadow-lg shadow-green-900/20">
-          See our solutions
-        </button>
-      </section>
+          <button className="mt-12 bg-[#bdf46d] text-[#022c22] px-10 py-4 rounded-full font-semibold hover:bg-[#a9e25d] transition shadow-lg shadow-green-900/20">
+            See our solutions
+          </button>
+        </section>
+      </header>
 
       {/* Stats Section */}
       <section className="w-full bg-[#fdf8f1] py-20 relative z-10">
@@ -149,10 +149,10 @@ export default function Home() {
 
       {/* Commitment Statement Section */}
       <section className="mt-40 text-center px-6 relative z-10 max-w-4xl">
-        <h2 className="text-5xl font-semibold leading-tight tracking-tight">
+        <h2 className="text-5xl font-semibold leading-tight tracking-tight text-[#022c22]">
           We deliver precision-driven services that build trust and accelerate business performance.
         </h2>
-        <button className="mt-12 bg-[#022c22] text-white px-10 py-4 rounded-full font-semibold hover:bg-black transition border border-white/10">
+        <button className="mt-12 bg-[#022c22] text-white px-10 py-4 rounded-full font-semibold hover:bg-black transition shadow-lg shadow-green-900/10">
           Get Started
         </button>
       </section>
@@ -161,17 +161,14 @@ export default function Home() {
       <section className="mt-32 w-full px-10 relative z-10 max-w-7xl">
         <div className="flex gap-4 overflow-hidden">
           {[1, 2, 3, 4, 5, 6].map((i) => (
-            <div key={i} className="flex-1 aspect-[3/4] bg-white/5 rounded-3xl overflow-hidden relative group">
-              <div className="absolute inset-0 bg-gradient-to-t from-[#022c22]/80 to-transparent opacity-0 group-hover:opacity-100 transition duration-500"></div>
-              {/* Image Placeholder */}
-              <div className="w-full h-full flex items-center justify-center text-white/20 font-bold italic">
-                {i === 1 && "Field View"}
-                {i === 2 && "Wind Farm"}
-                {i === 3 && "EV Port"}
-                {i === 4 && "Green Forest"}
-                {i === 5 && "Sun Light"}
-                {i === 6 && "Eco Home"}
-              </div>
+            <div key={i} className="flex-1 aspect-[3/4] bg-gray-100 rounded-3xl overflow-hidden relative group">
+              <div className="absolute inset-0 bg-gradient-to-t from-[#022c22]/10 to-transparent opacity-100 group-hover:opacity-100 transition duration-500"></div>
+              <Image 
+                src={`/home_0${i}.jpg`} 
+                alt={`Gallery image ${i}`} 
+                fill 
+                className="object-cover transition-transform duration-700 group-hover:scale-110" 
+              />
             </div>
           ))}
         </div>
@@ -179,18 +176,17 @@ export default function Home() {
 
       {/* FAQ Section */}
       <section className="mt-40 w-full max-w-3xl px-6 relative z-10 pb-40">
-        <h2 className="text-4xl font-semibold text-center mb-4 tracking-tight">FAQ</h2>
+        <h2 className="text-4xl font-semibold text-center mb-4 tracking-tight text-[#022c22]">FAQ</h2>
         <p className="text-gray-500 text-center text-sm mb-16">Here you will find the answers for the frequently asked questions.</p>
-
         <div className="flex flex-col gap-4">
           {faqs.map((faq, i) => (
-            <div key={i} className="border border-white/10 rounded-2xl overflow-hidden bg-white/5 hover:bg-white/[0.07] transition cursor-pointer" onClick={() => setOpenFaq(openFaq === i ? null : i)}>
+            <div key={i} className="border border-gray-100 rounded-2xl overflow-hidden bg-gray-50 hover:bg-gray-100 transition cursor-pointer" onClick={() => setOpenFaq(openFaq === i ? null : i)}>
               <div className="flex justify-between items-center px-8 py-6">
-                <span className="font-medium text-gray-200">{faq.question}</span>
+                <span className="font-semibold text-gray-800">{faq.question}</span>
                 <span className={`text-2xl transition-transform duration-300 ${openFaq === i ? 'rotate-45' : ''}`}>+</span>
               </div>
               {openFaq === i && (
-                <div className="px-8 pb-6 text-gray-400 text-sm leading-relaxed border-t border-white/5 pt-4">
+                <div className="px-8 pb-6 text-gray-600 text-sm leading-relaxed border-t border-gray-200 pt-4">
                   {faq.answer}
                 </div>
               )}
@@ -198,7 +194,14 @@ export default function Home() {
           ))}
         </div>
 
-       
+        {/* Support Banner */}
+        <div className="mt-20 bg-[#bdf46d]/20 border border-[#bdf46d]/30 p-8 rounded-[2rem] flex items-center gap-6">
+          <div className="w-12 h-12 rounded-full bg-[#bdf46d] flex items-center justify-center text-[#022c22] text-xl">💬</div>
+          <div>
+            <h4 className="font-bold text-[#022c22]">Still have questions?</h4>
+            <p className="text-gray-600 text-sm mt-1">For assistance, please visit our <Link href="#" className="underline text-[#022c22]">Contact us</Link> page or call our support line at 805-322-6112.</p>
+          </div>
+        </div>
       </section>
 
       <Footer />

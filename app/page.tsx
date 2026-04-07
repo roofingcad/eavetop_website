@@ -58,9 +58,9 @@ export default function Home() {
             Transform your business with expert engineering, seamless migrations, and innovative digital solutions, no matter where you are.
           </p>
 
-          <button className="mt-12 bg-[#bdf46d] text-[#022c22] px-10 py-4 rounded-full font-semibold hover:bg-[#a9e25d] transition shadow-lg shadow-green-900/20">
+          <Link href="/services" className="mt-12 bg-[#bdf46d] text-[#022c22] px-10 py-4 rounded-full font-semibold hover:bg-[#a9e25d] transition shadow-lg shadow-green-900/20 inline-block">
             See our solutions
-          </button>
+          </Link>
         </section>
       </header>
 

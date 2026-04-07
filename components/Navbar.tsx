@@ -32,9 +32,9 @@ export default function Navbar({ theme = "dark" }: NavbarProps) {
         <Link href="/services" className={`hover:${isDark ? "text-white" : "text-black"} transition`}>Services</Link>
       </div>
 
-      <button className={`border ${isDark ? "border-white/20 hover:bg-white hover:text-black" : "border-black/10 hover:bg-black hover:text-white"} px-8 py-2.5 rounded-full transition text-sm font-medium`}>
+      <Link href="/contact" className={`border ${isDark ? "border-white/20 hover:bg-white hover:text-black" : "border-black/10 hover:bg-black hover:text-white"} px-8 py-2.5 rounded-full transition text-sm font-medium`}>
         Get in touch →
-      </button>
+      </Link>
     </nav>
   );
 }

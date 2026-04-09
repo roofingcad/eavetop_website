@@ -6,8 +6,8 @@ export default function Footer() {
     <footer className="w-full bg-[#fdf8f1] pt-16 md:pt-20 pb-10 px-6 md:px-10 relative z-10 mt-auto overflow-hidden">
       {/* Background Wavy Lines Image */}
       <div 
-        className="absolute inset-0 z-0 opacity-40 bg-no-repeat bg-[left_bottom] pointer-events-none mix-blend-multiply"
-        style={{ backgroundImage: 'url("/transparent.jpg")', backgroundSize: '70% auto' }}
+        className="absolute inset-0 z-0 opacity-40 bg-no-repeat bg-center pointer-events-none mix-blend-multiply"
+        style={{ backgroundImage: 'url("/transparent.jpg")', backgroundSize: 'cover' }}
       ></div>
 
       <div className="max-w-7xl mx-auto relative z-10">

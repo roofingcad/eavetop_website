@@ -67,10 +67,14 @@ export default function ContactPage() {
                 className="w-full bg-gray-50/50 border border-gray-100 rounded-2xl px-6 py-4 text-sm focus:outline-none focus:border-[#bdf46d] focus:bg-white transition appearance-none cursor-pointer"
               >
                 <option value="">Select service</option>
-                <option value="solar">Solar Energy Solutions</option>
-                <option value="wind">Wind Power Systems</option>
-                <option value="hydro">Hydropower Projects</option>
-                <option value="ev">EV Charging Infrastructure</option>
+                <option value="it_services">IT Services</option>
+                <option value="symbility">Symbility Measurements</option>
+                <option value="mortgage_underwriting">Mortgage Underwriting</option>
+                <option value="medical_coding">Medical Coding</option>
+                <option value="xactimate">Xactimate Estimating Services</option>
+                <option value="mortgage_title_search">Mortgage Title Search</option>
+                <option value="medical_billing">Medical Billing</option>
+                <option value="healthcare_bpo">Healthcare BPO</option>
               </select>
             </div>
 
